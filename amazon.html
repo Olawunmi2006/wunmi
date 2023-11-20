@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+</head>
+<style>
+    *{ 
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-color: black;
+        height: 65px;
+        color: white;
+        display: flex;
+    }
+    .top{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .otu{
+        margin-left: 25px;
+    }
+    .del{
+        margin-top: 10px;
+    }
+    .pit{
+        margin-top: 24px;
+        margin-left: 12px;
+    }
+    select{
+        height: 50px;
+        width: 50px;
+        color: black;
+        background-color: gray;
+        /* border-radius: 5px; */
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .deli{
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+    .search input{
+        margin: 0;
+        margin-top: 9px;
+        height: 49.5px;
+        width: 700px;
+        margin-left: -2px;
+        /* border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; */
+        text-indent: 10px;
+        font-size: 17px;
+        color: rgb(26, 21, 21);
+    }
+    .why{
+        margin-top: 9px;
+        height: 49px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .lang select{
+        font-weight: bold;
+        width: 39px;
+        margin: 11px;
+        color: white;
+        background-color: black;
+        height: 50px;
+        margin-top: -22px;
+        border-style: none;
+    }
+    .lang{
+        margin-top: -1px;
+    }
+    .pop{
+        margin-left: 28px;
+        margin-top: 10px;
+    }
+    .dol{
+        margin-top: -24px;
+        margin-left: 50px;
+    }
+    .hello{
+        margin-top: 15px;
+    }
+    .hell{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .car{
+        margin-top: 10px;
+    }
+    .rut{
+        margin-top: -25px;
+        margin-left: 50px;
+        font-size: 18px;
+    }
+    .pol{
+        background-color: darkslategray;
+        height: 40px;
+        color: white;
+        text-indent: 30px;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .to{
+        margin-left: 20px;
+    }
+    .answer{
+        animation-name: wunmi;
+        animation-duration: 25s;
+        animation-delay: 0s ease-in-out all;
+        animation-iteration-count: infinite;
+        height: 900px;
+        width: 100%;
+    }
+    @keyframes wunmi{
+        0%{
+            background: url(./images/ama.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        30%{
+            background: url(./images/ama1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+         50%{
+            background: url(./images/ama2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+         80%{
+            background: url(./images/ama3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+         100%{
+            background: url(./images/ama.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    .game{
+    height: 350px;
+    width: 340px;
+    background-color: white;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 300px;
+    }
+    .zon{
+    margin-left: 40px;
+    }
+    .key{
+        margin-left: 120px;
+    }
+    .cha{
+        margin-left: 70px;
+    }
+    .see{
+        text-decoration: none;
+        margin-left: 10px;
+    }
+    .toy{
+        height: 350px;
+        width: 340px;
+        background-color: white;
+        padding: 10px;
+        margin-left: 390px;
+        margin-top: -370px;
+    }
+    /* .emi{
+        display: flex;
+        justify-content: space-evenly;
+    } */
+    .ele{
+        height: 350px;
+        width: 340px;
+        background-color: white;
+        padding: 10px;
+        margin-left: 760px;
+        margin-top: -370px;
+    }
+    .sign{
+        background-color: white;
+        height: 150px;
+        width: 380px;
+        margin-left: 1130px;
+        margin-top: -370px;
+    }
+    .for{
+        font-size: 25px;
+        text-indent: 15px;
+    }
+    .sec{
+        background-color: orange;
+        border-radius: 8px;
+        width: 360px;
+        height: 38px;
+        margin-left: 10px;
+    }
+    .ship{
+        margin-left: 1200px;
+    }
+    .loop{
+        background-color: white;
+        color: red;
+        height: 30px;
+        font-size: 25px;
+    }
+</style>
+<body>
+    <header>
+        <div class="top"><br>
+            <div><img src="./images/otu.jpg" alt="" width="100px" height="65px" class="otu"> </div><br>
+            <div class="pit"><img src="./images/bx-location-plus.png" alt="" height="20px" class="pipi"></div>
+            <div class="del"><b>Deliver to <br> Nigeria</b></div>
+            <div class="deli"><br>
+                <select name="" id="" class="sel" aria-placeholder="Deliver">
+                    <option value="">All</option>
+                    <option value="" class="dep">All Departments</option>
+                    <option value="">Art & Crafts</option>
+                    <option value="">Automotive</option>
+                    <option value="">Baby</option>
+                    <option value="">Beauty & Personal Care</option>
+                    <option value="">Books</option>
+                    <option value="">Boy's Fashion</option>
+                    <option value="">Computers</option>
+                    <option value="">Deals</option>
+                    <option value="">Digital Music</option>
+                    <option value="">Electronics</option>
+                    <option value="">Girl's Fashion</option>
+                    <option value="">Health & Household</option>
+                    <option value="">Home & Kitchen</option>
+                    <option value="">Industrial & Scientific</option>
+                    <option value="">Kindle Store</option>
+                    <option value="">Luggage</option>
+                    <option value="">Men's Fashion</option>
+                    <option value="">Movies & TV</option>
+                    <option value="">Music,CDs & Vinyl</option>
+                    <option value="">Pet Supplies</option>
+                    <option value="">Prime Video</option>
+                    <option value="">Software</option>
+                    <option value="">Sports & Outdoors</option>
+                    <option value="">Tools & Home Improvement</option>
+                    <option value="">Toys & Games</option>
+                    <option value="">Video Games</option>
+                    <option value="">Women's Fashion</option>
+                </select>
+            </div>
+            <div class="search"><input type="search" name="searchamazon" id="searchamazon" placeholder="Search Amazon"></div>
+            <img src="./images/bx-search.png" alt="" style="background-color: orange;" height="30px" width="50px" class="why">
+            <div class="lang"><br>
+                <div class="pop"><img src="./images/flag.jpg" alt="" width="30px" height="20px"></div>
+                <div class="dol">
+                <select name="lang" id="lang">
+                    <option value="">EN</option>
+                    <option value="">espanol-ES</option>
+                    <option value="">Deutsch-DE</option>
+                    <option value="">Yoruba-YR</option>
+                    <option value="">Portuguese-PT</option>
+                    <option value="">France-FR</option>
+                    <option value="">Spanish-SP</option>
+                    <option value="">Korea-KR</option>
+                </select>
+                </div>
+            </div>
+            <div class="hello">
+                    <p class="mainmenu">Hello,sign in <br><b>Account & Lists</b></p>
+            </div>
+            <div class="hell">
+                <p class="mainmenu">Returns<br><b> & Orders</b></p>
+            </div>
+            <div class="car">
+                <img src="./images/bx-cart-add.png" alt="" width="50px" height="40px">
+                <div class="rut"><b>Cart</b></div>
+            </div>
+
+        </div>
+    </header>
+    <div class="loop">
+        <marquee behavior="scroll" direction="left">We Provide you with the best,Shop with us at Amazon,We bring satisfaction to you at an affordable price</marquee>
+    </div>
+    <div class="pol">
+        <div class="eri">
+        <p> <b>All</b><b class="to">Today's Deals</b><b class="to">Customer Service</b><b class="to">Registry</b><b class="to">Gift Cards</b><b class="to">Sell</b></p>
+        </div>
+    </div>
+    <div class="answer"><br><br><br>
+        <div class="emi">
+        <div class="game">
+            <h2>Gaming accessories</h2>
+            <img src="./images/zon1.jpg" alt="" width="150px" class="head"><img src="./images/zon2.jpg" alt="" width="150px" class="zon"><br>
+            <p><b>Headset</b><b class="key">Keyboards</b></p>
+            <img src="./images/zon3.jpg" alt="" width="150px"><img src="./images/zon4.jpg" alt="" width="150px" class="zon"><br>
+            <p><b>Computer mice</b><b class="cha">Chairs</b></p><br><br>
+            <a href="#" class="see">See more</a>
+        </div>
+        <div class="toy">
+            <h2>Toys Under $30</h2><br>
+            <img src="./images/zon5.jpg" alt="" width="340px" height="250px">
+            <a href="#" class="see">See more</a>
+        </div>
+        <div class="ele">
+            <h2>Electronics</h2><br>
+            <img src="./images/zon6.jpg" alt="" width="340px" height="250px">
+            <a href="#" class="see">See more</a>
+        </div>
+        <div class="sin">
+            <div class="sign"><br>
+                <h1 class="for">Sign on for the best experience</h1><br>
+                <input type="submit" value="Sign in securely" class="sec">
+            </div><br>
+            <img src="./images/zon7.jpg" alt="" class="ship" width="280px" height="200px">
+        </div>
+        </div>
+    </div>
+</body>
+</html>
